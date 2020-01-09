@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [ "./*" ],
+            "src/*": ["./src/*"]
+        },
+        "types": [
+            "node",
+            "@wdio/sync",
+            // "webdriverio",
+            "chai",
+            "@wdio/cucumber-framework"
+        ]
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
+}
