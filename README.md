@@ -1,5 +1,7 @@
 # wdio-ts-no-recompile
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/joscha/wdio-ts-no-recompile.svg)](https://greenkeeper.io/)
+
 
 Example repository to show that the default `local` runner from `wdio` performs poorly with transpiled languages (e.g. Typescript).
 Run `yarn test` to see three outputs of transpilation processes:
