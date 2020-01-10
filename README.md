@@ -10,3 +10,5 @@ Run `yarn test` to see three outputs of transpilation processes:
 Adding more feature files means adding more transpilation steps; e.g. for `n` features I want to run I get `n + 1` transpilation steps.
 
 Ideally this would only be a single transpile; or possibly two (one for the bootstrapping of wdio itself and one for all feature files).
+
+Bug report [here](https://github.com/webdriverio/webdriverio/issues/4949).
