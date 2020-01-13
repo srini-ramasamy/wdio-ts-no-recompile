@@ -1,4 +1,4 @@
-Feature: Performing a Yahoo Search
+Feature: Performing a Yahoo Search 1
 
     As a user on the Yahoo search page
     I want to search for Selenium-Webdriver

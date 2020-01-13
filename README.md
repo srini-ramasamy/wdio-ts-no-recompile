@@ -12,3 +12,7 @@ Adding more feature files means adding more transpilation steps; e.g. for `n` fe
 Ideally this would only be a single transpile; or possibly two (one for the bootstrapping of wdio itself and one for all feature files).
 
 Bug report [here](https://github.com/webdriverio/webdriverio/issues/4949).
+
+## Update 2020-01-13
+
+Loading the configuration as TS has it's own challenges. Changed the configuration to pure JS now to reduce the number of moving parts in this repo.
