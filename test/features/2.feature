@@ -1,4 +1,4 @@
-Feature: Performing a Yahoo Search 2
+Feature: Performing a Yahoo Search two
 
     As a user on the Yahoo search page
     I want to search for Selenium-Webdriver
@@ -8,7 +8,7 @@ Feature: Performing a Yahoo Search 2
 
         Given I am on the search page
 
-    Scenario: Performing a search operation
+    Scenario: Performing a search operation two
         When I enter "Selenium Webdriver" into the search box
         And  I click the search button
         Then I should see a list of search results
