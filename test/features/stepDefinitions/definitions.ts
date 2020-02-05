@@ -1,14 +1,21 @@
 //import { Given, When, Then } from 'cucumber';
 import { defineSupportCode } from 'cucumber';
 import yahooPage from '../pageobjects/yahoo-search.page';
+import googlePage from '../pageobjects/google-search.page';
 
 defineSupportCode(function({ Given }) {
 
-  // *** belongs to Yahoo serch feature
-  Given(/^I am on the search page$/, function() {
+  // *** belongs to Yahoo search feature
+  Given(/^I am on the Yahoo search page$/, function() {
     yahooPage.open();
     browser.getTitle().should.equal('Yahoo Search - Web Search');
   });
+
+  // *** belongs to Google search feature
+  Given(/^I am on the Google search page$/, function() {
+    googlePage.open();
+    browser.getTitle().should.equal('Google');
+  });  
 
 });
 

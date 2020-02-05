@@ -10,10 +10,14 @@
   "dependencies": {
     "@types/chai": "^4.2.7",
     "@types/node": "^13.1.5",
-    "@wdio/cli": "^5.18.4",
-    "@wdio/cucumber-framework": "^5.16.15",
+    "@wdio/cli": "file:../webdriverio/packages/wdio-cli",
+    "@wdio/cucumber-framework": "file:../webdriverio/packages/wdio-cucumber-framework",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
+    "chromedriver": "^80.0.0",
+    "expect": "^25.1.0",
+    "expect-webdriverio": "^0.2.0",
+    "lodash.chunk": "^4.2.0",
     "ts-node": "^8.5.4",
     "ts-node-dev": "^1.0.0-pre.44",
     "tsconfig-paths": "^3.9.0",
@@ -21,11 +25,14 @@
   },
   "devDependencies": {
     "@types/chai-as-promised": "^7.1.2",
-    "@wdio/local-runner": "^5.18.4",
-    "@wdio/mocha-framework": "^5.16.15",
-    "@wdio/spec-reporter": "^5.16.11",
-    "@wdio/sync": "^5.17.0",
-    "chromedriver": "^79.0.0",
+    "@wdio/local-runner": "file:../webdriverio/packages/wdio-local-runner",
+    "@wdio/mocha-framework": "file:../webdriverio/packages/wdio-mocha-framework",
+    "@wdio/spec-reporter": "file:../webdriverio/packages/wdio-spec-reporter",
+    "@wdio/sync": "file:../webdriverio/packages/wdio-sync",
+    "expect-webdriverio": "0.2.0",
     "wdio-chromedriver-service": "^5.0.2"
+  },
+  "resolutions": {
+    "@wdio/runner": "file:../webdriverio/packages/wdio-runner"
   }
 }

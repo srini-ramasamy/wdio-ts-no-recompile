@@ -53,6 +53,7 @@ const config = {
     //
     maxInstances: 1,
     maxInstancesPerCapability: 1,
+    maxSpecsPerSuite: Infinity,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -154,7 +155,10 @@ const config = {
      */
     before: function (capabilities, specs) {
         require('chai').should();
+        require('expect-webdriverio')
     },
+
+    onWorkerStart: function() {}
 }
 
 module.exports = { config }
