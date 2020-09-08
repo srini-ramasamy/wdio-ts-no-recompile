@@ -1,13 +1,13 @@
 const config = {
-    cucumberOpts: {
-        requireModule: [
-            'tsconfig-paths/register',
-            () => { require('ts-node').register({ files: true, transpileOnly: true }) },
-        ],
-        require: [
-            './test/features/**/*.ts'
-        ],
-    },
+    // cucumberOpts: {
+    //     requireModule: [
+    //         'tsconfig-paths/register',
+    //         () => { require('ts-node').register({ files: true, transpileOnly: true }) },
+    //     ],
+    //     require: [
+    //         './test/features/**/*.ts'
+    //     ],
+    // },
     //
     // ====================
     // Runner Configuration
@@ -29,7 +29,7 @@ const config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/features/*.feature',
+        './test/features/*.spec.ts',
     ],
     // Patterns to exclude.
     exclude: [
@@ -77,7 +77,7 @@ const config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
@@ -125,7 +125,7 @@ const config = {
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
-    framework: 'cucumber',
+    framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -139,8 +139,7 @@ const config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd',
-        timeout: 60000
+        require: ['ts-node/register/transpile-only'],
     },
     //
     // =====
