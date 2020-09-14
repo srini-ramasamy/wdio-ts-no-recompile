@@ -10,7 +10,7 @@
             "@wdio/sync",
             // "webdriverio",
             "chai",
-            "@wdio/mocha-framework"
+            "@wdio/cucumber-framework"
         ]
     },
     "include": [
